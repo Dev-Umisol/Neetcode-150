@@ -21,8 +21,9 @@ class Solution:
 print(Solution().hasDuplicate([1, 2, 3, 3]))
 print(Solution().hasDuplicate([1, 2, 3, 4]))
 
+print("\n")
 #* -------------------------------------------------------------------------
-print("----------------------Separator----------------------------")
+print("----------------------Separator----------------------------\n")
 
 #! Valid Anagram
     #? Given two strings s and t, return true if the two strings are anagrams of each other otherwise return false
@@ -48,8 +49,9 @@ class Solution:
 print(Solution().isAnagram("racecar", "carrace"))
 print(Solution().isAnagram("jar", "jam"))
 
+print("\n")
 #* -------------------------------------------------------------------------
-print("----------------------Separator----------------------------")
+print("----------------------Separator----------------------------\n")
 
 #! Two Sum
     #? Given an array of intergers nums and an integer target, return the indices i and j such that nums[i] + nums[j] == target and i != j
@@ -81,14 +83,17 @@ print(Solution().twoSum([3, 4, 5, 6], 7))
 print(Solution().twoSum([4, 5, 6], 10))
 print(Solution().twoSum([5, 5], 10))
 
+print("\n")
 #* -------------------------------------------------------------------------
-print("----------------------Separator----------------------------")
+print("----------------------Separator----------------------------\n")
 
 #! Remove Duplicates from Sorted Array
     #? Given an integer array nums sorted in non-decreasing order, remove the duplicates in
     #? place such that each unique element appears only once. The relative order of the elements should be kept the same.
     #? Then return the number of unique elements in nums.
     #? Consider the number of unique elements of nums to be k, to get accepted,
+    
+print('removeDuplicates')
 
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
@@ -103,5 +108,6 @@ class Solution:
 print(Solution().removeDuplicates([1, 1, 2]))
 print(Solution().removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
 
+print("\n")
 #* -------------------------------------------------------------------------
-print("----------------------Separator----------------------------")
+print("----------------------Separator----------------------------\n")
