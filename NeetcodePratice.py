@@ -80,3 +80,28 @@ class Solution:
 print(Solution().twoSum([3, 4, 5, 6], 7))
 print(Solution().twoSum([4, 5, 6], 10))
 print(Solution().twoSum([5, 5], 10))
+
+#* -------------------------------------------------------------------------
+print("----------------------Separator----------------------------")
+
+#! Remove Duplicates from Sorted Array
+    #? Given an integer array nums sorted in non-decreasing order, remove the duplicates in
+    #? place such that each unique element appears only once. The relative order of the elements should be kept the same.
+    #? Then return the number of unique elements in nums.
+    #? Consider the number of unique elements of nums to be k, to get accepted,
+
+class Solution:
+    def removeDuplicates(self, nums: list[int]) -> int:
+        left = 1
+        # left is writer variable, i is reader variable
+        for i in range(1, len(nums)):
+            if nums[i] != nums[i - 1]:
+                nums[left] = nums[i]
+                left += 1
+        return left
+
+print(Solution().removeDuplicates([1, 1, 2]))
+print(Solution().removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
+
+#* -------------------------------------------------------------------------
+print("----------------------Separator----------------------------")
